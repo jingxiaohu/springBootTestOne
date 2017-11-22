@@ -54,6 +54,7 @@
       <!--<AppenderRef ref="mail"/>-->
     </AsyncRoot>
 
+   <!--
     <AsyncLogger name="com.alibaba" level="INFO"/>
     <AsyncLogger name="org.apache" level="INFO"/>
     <AsyncLogger name="org.quartz" level="WARN"/>
@@ -61,6 +62,7 @@
     <AsyncLogger name="org.springframework" level="WARN"/>
     <AsyncLogger name="org.hibernate.validator" level="WARN"/>
     <AsyncLogger name="net.sf" level="WARN"/>
+   -->
 
   </Loggers>
 

@@ -20,6 +20,7 @@ import java.util.List;
 @Service
 public class UserInfoBiz extends BaseBiz {
 
+
   /**
    * 获取用户信息
    * @throws Exception
@@ -29,6 +30,7 @@ public class UserInfoBiz extends BaseBiz {
 //    System.out.println(getDB().getDs().determineCurrentLookupKey().toString());
     String sql = "select *  from user_info where ui_id=40 limit 1";
     User_info user_info = getDB().queryUniqueT(sql,User_info.class);
+    log.info("this is my method telephone={}",user_info.ui_tel);
     return user_info;
   }
 }
