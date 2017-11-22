@@ -17,6 +17,7 @@ apply plugin: 'org.springframework.boot'
 group = 'com.myproject'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 repositories {
 //	mavenCentral()
@@ -24,15 +25,16 @@ repositories {
 	maven { url "http://repo.maven.apache.org/maven2" }
 	maven { url "https://dl.bintray.com/bestwu/maven" }
 }
-
-
+//gradle dependencyInsight --dependency slf4j-api
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
+//	compile('org.springframework.boot:spring-boot-starter-logging')
+//	compile('org.springframework.boot:spring-boot-starter-log4j2')
 	//
 	compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.40'
 	compile group: 'com.alibaba', name: 'druid', version: '1.0.26'
 //	compile group: 'org.apache.logging.log4j', name: 'log4j-slf4j-impl', version: '2.6.2'
-	compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.7'
+//	compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.7'
 //	compile group: 'org.apache.logging.log4j', name: 'log4j-1.2-api', version: '2.6.2'
 //	compile group: 'org.apache.logging.log4j', name: 'log4j-web', version: '2.6.2'
 	compile group: 'com.lmax', name: 'disruptor', version: '3.3.6'
